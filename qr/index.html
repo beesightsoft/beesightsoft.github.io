@@ -42,6 +42,7 @@
             if(query != null && query.trim().length>0){
                 data = query;
             }
+            data = decodeURIComponent(data);
 
             qrCode.clear();
             qrCode.makeCode(data);
